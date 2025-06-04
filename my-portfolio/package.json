@@ -12,8 +12,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fontsource/fredoka-one": "^5.2.5",
+    "@fontsource/lato": "^5.2.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-router-dom": "^7.6.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {

@@ -1,52 +1,87 @@
 import React from "react";
 import "../styles/global.scss"
+import NavBar from "../components/NavBar";
+import MemoCircle from "../components/MemoCircle.jsx";
+import ProjectCard from "../components/ProjectCard.jsx";
+import KINDImage from "../assets/KIND/AwardPictureGroup.JPG"
+import FAMUniteImage from "../assets/FAMUnite/FAMUniteScreenshot.png"
+
+const projectOne = {
+    title: "KIND Perfect Pitch",
+    image: KINDImage,
+    date: "September - October 2023",
+    description: "A first place six week case competition solution for attracting Gen-Z consumers",
+    tags: ["UX Design", "Research"]
+}
+const projectTwo = {
+    title: "FAMUnite",
+    image: FAMUniteImage,
+    date: "September - October 2023",
+    description: "FamUnite",
+    tags: ["UX Design", "Research"]
+}
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen bg-[var(--background-white)] p-8">
-            <header className="text-center mb-12">
-                <h1 className="text-5xl font-bold text-[var(--primary-blue)] mb-2">Nia Berry</h1>
-                <h2 className="text-xl text-[var(--text-dark)]">Frontend Developer & UI Enthusiast</h2>
-                <p className="text-[var(--text-dark)]">
-                    Organic. Bold. Purposeful. Just like my code.
-                </p>
+        <div className={"container"} >
+            <header>
+                <NavBar />
             </header>
-
             <main>
-                <section className="neumorphic">
-                    <h3 >About Me</h3>
-                    <p className="text-[var(--text-dark)]">
-                        I'm a creative frontend developer passionate about building beautiful,
-                        intuitive digital experiences with a focus on responsive design,
-                        accessibility, and clean code.
-                    </p>
-                </section>
-
-                <section className="neumorphic">
-                    <h3>Skills</h3>
-                    <ul>
-                        {['React', 'JavaScript', 'Tailwind CSS', 'Firebase', 'UI/UX Design'].map((skill) => (
-                            <li
-                                key={skill}
-                                className="pill"
-                            >
-                                {skill}
-                            </li>
+                <section style={styles.banner}>
+                    <MemoCircle/>
+                    <div style={{margin: "15px", textAlign: "center"}}>
+                        <h1>Nia Berry</h1>
+                        <h2>User Experience Developer</h2>
+                        <ul style={styles.role}>
+                            {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
+                                <li
+                                    key={role}
+                                    className="tag"
+                                >
+                                    {role}
+                                </li>
                             ))}
-                    </ul>
+                        </ul>
+                        <p>
+                            I'm a creative frontend developer passionate about building beautiful,
+                            intuitive digital experiences with a focus on responsive design,
+                            accessibility, and clean code.
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <h3>Projects</h3>
+                    <div style={styles.projects}>
+                        <ProjectCard project={projectOne} />
+                        <ProjectCard project={projectTwo} />
+                    </div>
                 </section>
 
-                <section className="neumorphic">
-                    <h3 >Projects</h3>
-                    <p >
-                        Check back soon for featured portfolio pieces showcasing my latest work.
-                    </p>
-                </section>
+
             </main>
 
-            <footer className="mt-12 text-center text-sm text-[var(--text-dark)]">
+            <footer>
                 © {new Date().getFullYear()} Nia Berry. All rights reserved.
             </footer>
         </div>
 );
+}
+
+const styles = {
+    banner: {
+        display: "flex",
+        gap: "50px",
+        margin: "20px 0",
+    },
+    role: {
+        display: "flex",
+        padding: "0px",
+        gap: "10px",
+    },
+    projects: {
+        display: "flex",
+        justifyContent: "center",
+        gap: "25px",
+    }
 }

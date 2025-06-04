@@ -1,7 +1,11 @@
 :root {
-  --primary-blue: #1f59f1;     // primary color
+  --primary-blue: #3987d0;     // bold powdery blue
   --accent-green: #2f8c3c;     // accent
+  --accent-brown: #6d5327;
+  --accent-yellow: #fff1a8;   // buttery yellow
+  //--accent-yellow: #ffe770;
   --background-white: #f7f9fb; // Light white with cool tone
+  --background-nude: #f9f4ec;
   --soft-gray: #e3e6ea;        // For shadows and surfaces
   --text-dark: #1a1a1a;        // Body text
   --text-light: #ffffff;       // For contrasting on blue/green buttons
@@ -10,25 +14,58 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
+  // font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: var(--text-dark);
-  background: var(--background-white);
+   background: var(--background-nude);
+  // background-color: #f9f4ec;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  //font-family: 'Poppins', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
+  font-weight: 300;
   letter-spacing: -0.5px;
+  color: var(--primary-blue);
+  margin: 20px 0;
+}
+h1 {
+  font-size: 4.4rem;
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+footer {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container {
+  margin-top: 100px;
+  margin-left: 20px;
 }
 .neumorphic {
   background: var(--background-white);
   border-radius: 20px;
-  box-shadow:
-          8px 8px 16px var(--shadow-dark),
-          -8px -8px 16px var(--shadow-light);
+  // box-shadow:
+  //        19px 19px 54px #e0d494,
+  //        -19px -19px 54px #ffffbc;
+  box-shadow:  24px 24px 48px #d4cfc9, -24px -24px 48px #ffffff;
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+.neumorphic-inset {
+  background: #f9f4ec;
+  box-shadow: inset 8px 8px 16px #b6b1aa,
+  inset -8px -8px 16px #ffffff;
+  border-radius: 20px;
   padding: 2rem;
   transition: all 0.2s ease-in-out;
 }
@@ -64,16 +101,20 @@ input, textarea {
   font-size: 1rem;
   width: 100%;
 }
+section {
+  margin-bottom: 15px;
+}
 .tag {
   display: inline-block;
-  background-color: var(--accent-green);
+  background-color: var(--accent-brown);
   color: var(--text-light);
-  padding: 6px 12px;
+  padding: 6px 22px;
   border-radius: 999px;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 0.3px;
 }
+
 
 
 
