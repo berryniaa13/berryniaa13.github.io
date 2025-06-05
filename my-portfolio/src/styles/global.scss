@@ -12,6 +12,10 @@
   --shadow-light: #ffffff;
   --shadow-dark: rgba(163, 177, 198, 0.6);
 }
+* {
+  box-sizing: border-box;
+ // outline: 1px solid red;
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -20,8 +24,8 @@ body {
   color: var(--text-dark);
    background: var(--background-nude);
   // background-color: #f9f4ec;
-  margin: 0;
-  padding: 0;
+  //margin: 0;
+  //padding: 0;
   line-height: 1.6;
 }
 h1, h2, h3 {
@@ -49,7 +53,7 @@ footer {
 }
 .container {
   margin-top: 100px;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 .neumorphic {
   background: var(--background-white);
@@ -115,6 +119,44 @@ section {
   letter-spacing: 0.3px;
 }
 
+// Project Card
+.project-card {
+  position: relative;
+}
+
+.project-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background-color: rgba(0, 0, 0, 0.7);
+  background-color: #422b05;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-card .overlay {
+  pointer-events: none;
+}
+.project-card:hover .overlay {
+  pointer-events: auto;
+}
 
 
 

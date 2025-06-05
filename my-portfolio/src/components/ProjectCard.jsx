@@ -5,26 +5,27 @@ export default function ProjectCard({project}) {
     console.log("Project: ", project);
     return (
         <>
-            <div style={styles.card} className="event-card">
+            <div style={styles.card} className="project-card">
+                <div className={"overlay"} >
+                    <p style={styles.description}>{project?.description}</p>
+                    <a href={project?.url || "#"} style={styles.link}>View Details</a>
+                </div>
+
                 <div style={styles.imageContainer}>
                     <img
                         src={project?.image || placeholderImage}
                         alt={"Event"}
                         style={styles.image}
                     />
-
                 </div>
+
                 <div style={styles.body}>
                     <h3 style={styles.title}>{project?.title || "Untitled Event"}</h3>
-                    <p style={styles.meta}><strong> {project?.date || "Date Unavailable"} </strong></p>
-                    <p>{project?.tags.map((category)=> (
-                        <span key={category}>{category}</span>
-                        ))}</p>
-                    <div style={styles.actions}>
-                        <button style={styles.viewBtn}>
-                            View Details
-                        </button>
-                    </div>
+                    <ul style={styles.tag}>{project?.tags.map((category)=> (
+                        <li key={category}>
+                            {category} </li>
+                        ))}</ul>
+                    <a href={project?.url || "#"} style={styles.link}>View Details</a>
                 </div>
             </div>
         </>
@@ -48,6 +49,7 @@ const styles = {
         backdropFilter: "blur(10px)",
         WebkitBackdropFilter: "blur(10px)",
     },
+
     imageContainer: {
         position: "relative",
     },
@@ -77,7 +79,18 @@ const styles = {
         display: "flex",
         gap: "8px",
         padding: "12px",
-        borderTop: "1px solid #eee"
+    },
+    link: {
+        textDecoration: "none",
+        cursor: "pointer",
+        color: "var(--primary-blue)",
+        fontWeight: "bold",
+
+    },
+    tag:{
+        listStyle: "none",
+        display: "flex",
+        color:"#333",
     },
     viewBtn: {
         flex: 1,

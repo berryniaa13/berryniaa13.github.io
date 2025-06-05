@@ -11,14 +11,16 @@ const projectOne = {
     image: KINDImage,
     date: "September - October 2023",
     description: "A first place six week case competition solution for attracting Gen-Z consumers",
-    tags: ["UX Design", "Research"]
+    tags: ["UX Design"],
+    url: "https://github.com/berryniaa13/KINDPerfectPitch"
 }
 const projectTwo = {
     title: "FAMUnite",
     image: FAMUniteImage,
-    date: "September - October 2023",
-    description: "FamUnite",
-    tags: ["UX Design", "Research"]
+    date: "September 2024 - May 2025",
+    description: "A two semester software development capstone project",
+    tags: ["Software Development", "UX Design"],
+    url: "https://github.com/berryniaa13/famunite2"
 }
 
 export default function HomePage() {
@@ -30,9 +32,8 @@ export default function HomePage() {
             <main>
                 <section style={styles.banner}>
                     <MemoCircle/>
-                    <div style={{margin: "15px", textAlign: "center"}}>
+                    <div style={{margin: "45px", textAlign: "center", maxWidth: "500px"}}>
                         <h1>Nia Berry</h1>
-                        <h2>User Experience Developer</h2>
                         <ul style={styles.role}>
                             {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
                                 <li
@@ -43,11 +44,10 @@ export default function HomePage() {
                                 </li>
                             ))}
                         </ul>
-                        <p>
-                            I'm a creative frontend developer passionate about building beautiful,
-                            intuitive digital experiences with a focus on responsive design,
-                            accessibility, and clean code.
-                        </p>
+                        <h3>
+                            a creative frontend developer passionate about building beautiful,
+                            intuitive digital experiences
+                        </h3>
                     </div>
                 </section>
                 <section>
@@ -71,13 +71,13 @@ export default function HomePage() {
 const styles = {
     banner: {
         display: "flex",
-        gap: "50px",
         margin: "20px 0",
     },
     role: {
         display: "flex",
         padding: "0px",
         gap: "10px",
+        justifyContent: "center",
     },
     projects: {
         display: "flex",
