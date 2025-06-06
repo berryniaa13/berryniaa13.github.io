@@ -6,7 +6,7 @@ export default function ProjectCard({project}) {
     return (
         <>
             <div style={styles.card} className="project-card">
-                <div className={"overlay"} >
+                <div className={"overlay"}  style={ {backgroundColor: project?.backgroundColor} }>
                     <p style={styles.description}>{project?.description}</p>
                     <a href={project?.url || "#"} style={styles.link}>View Details</a>
                 </div>
@@ -19,13 +19,13 @@ export default function ProjectCard({project}) {
                     />
                 </div>
 
-                <div style={styles.body}>
-                    <h3 style={styles.title}>{project?.title || "Untitled Event"}</h3>
-                    <ul style={styles.tag}>{project?.tags.map((category)=> (
-                        <li key={category}>
+                <div style={{...styles.body, color: project?.backgroundColor || "white"}}>
+                    <h3 style={{...styles.title, color: project?.backgroundColor}}>{project?.title || "Untitled Event"}</h3>
+                    <ul style={{...styles.tag, color: project?.backgroundColor}}>{project?.tags.map((category)=> (
+                        <li className={"tag"} style={{backgroundColor: project?.backgroundColor}} key={category}>
                             {category} </li>
                         ))}</ul>
-                    <a href={project?.url || "#"} style={styles.link}>View Details</a>
+                    <a href={project?.url || "#"} style={{...styles.link, color: project?.backgroundColor}}>View Details</a>
                 </div>
             </div>
         </>
@@ -36,7 +36,7 @@ const styles = {
     card: {
         width: "350px",
         height: "400px",
-        borderRadius: "12px",
+        borderRadius: "22px",
         backgroundColor: "#fff",
         display: "flex",
         flexDirection: "column",
@@ -61,12 +61,12 @@ const styles = {
         borderTopRightRadius: "12px"
     },
     body: {
-        padding: "4px 12px 12px 12px",
+        padding: "4px 12px 12px 18px",
         flex: 1
     },
     title: {
-        fontSize: "16px",
-        marginBottom: "4px",
+        fontSize: "20px",
+        marginBottom: "14px",
         marginTop: "0px",
         fontWeight:"bold"
     },
@@ -84,13 +84,18 @@ const styles = {
         textDecoration: "none",
         cursor: "pointer",
         color: "var(--primary-blue)",
-        fontWeight: "bold",
+        fontWeight: 800,
+        marginTop: "20px"
 
     },
     tag:{
         listStyle: "none",
         display: "flex",
+        gap: "8px",
         color:"#333",
+        margin: 0,
+        padding: 0,
+        marginBottom: "15px",
     },
     viewBtn: {
         flex: 1,

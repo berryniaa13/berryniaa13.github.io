@@ -39,7 +39,8 @@ const styles = {
         justifyContent: "center",
         overflow: "hidden",
         backgroundColor: "var(--accent-yellow)",
-         background: "linear-gradient(145deg, #ffffb4, #e6d997",
+       //  background: "linear-gradient(145deg, #ffffb4, #e6d997",
+        background: "linear-gradient(145deg, #fff778, #e6d065)",
         // boxShadow:  "14px 14px 28px #e0d494,-14px -14px 28px #ffffbc",
         //background: "linear-gradient(145deg, #fffffd, #e0dcd4)",
         // boxShadow:  "24px 24px 48px #d4cfc9, -24px -24px 48px #ffffff"

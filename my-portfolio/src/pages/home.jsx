@@ -12,7 +12,8 @@ const projectOne = {
     date: "September - October 2023",
     description: "A first place six week case competition solution for attracting Gen-Z consumers",
     tags: ["UX Design"],
-    url: "https://github.com/berryniaa13/KINDPerfectPitch"
+    url: "https://github.com/berryniaa13/KINDPerfectPitch",
+    backgroundColor: "#855014"
 }
 const projectTwo = {
     title: "FAMUnite",
@@ -20,7 +21,8 @@ const projectTwo = {
     date: "September 2024 - May 2025",
     description: "A two semester software development capstone project",
     tags: ["Software Development", "UX Design"],
-    url: "https://github.com/berryniaa13/famunite2"
+    url: "https://github.com/berryniaa13/famunite2",
+    backgroundColor: "#573105"
 }
 
 export default function HomePage() {
@@ -32,8 +34,8 @@ export default function HomePage() {
             <main>
                 <section style={styles.banner}>
                     <MemoCircle/>
-                    <div style={{margin: "45px", textAlign: "center", maxWidth: "500px"}}>
-                        <h1>Nia Berry</h1>
+                    <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
+                        <h1>Hello! I'm Nia </h1>
                         <ul style={styles.role}>
                             {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
                                 <li
@@ -51,16 +53,13 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section>
-                    <h3>Projects</h3>
+                    <h2>Work</h2>
                     <div style={styles.projects}>
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />
                     </div>
                 </section>
-
-
             </main>
-
             <footer>
                 © {new Date().getFullYear()} Nia Berry. All rights reserved.
             </footer>
@@ -72,6 +71,7 @@ const styles = {
     banner: {
         display: "flex",
         margin: "20px 0",
+        paddingBottom: "30px",
     },
     role: {
         display: "flex",

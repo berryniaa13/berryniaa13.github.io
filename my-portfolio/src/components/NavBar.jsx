@@ -6,22 +6,22 @@ export default function NavBar() {
         <nav style={styles.container}>
             <ul style={styles.nav}>
                 <li>
-                    <Link to="/" style={styles.link}>
+                    <Link to="/" className={"nav-link"} >
                         Home
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about" style={styles.link}>
+                    <Link to="/about" className={"nav-link"}>
                         About
                     </Link>
                 </li>
                 <li>
-                    <Link to="/work" style={styles.link}>
+                    <Link to="/work" className={"nav-link"}>
                         Work
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact" style={styles.link}>
+                    <Link to="/contact" className={"nav-link"}>
                         Contact Me
                     </Link>
                 </li>
@@ -45,6 +45,7 @@ const styles = {
         listStyle: "none",
         padding: "0.75rem 1rem",
         borderRadius: "0.75rem",
+        backgroundColor: "var(--backgroundNude)",
     },
     menu: {
         display: "flex",
@@ -56,7 +57,7 @@ const styles = {
         boxShadow: "8px 8px 16px #d1d9e6, -8px -8px 16px #ffffff",
     },
     link: {
-    color: "var(--primary-blue)",
+    color: "var(--accent-brown)",
     fontWeight: 600,
     textDecoration: "none",
         "&:hover": {
