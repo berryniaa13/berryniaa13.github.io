@@ -6,7 +6,7 @@ export default function MemoCircle() {
 
 
     return (
-        <div style={{...styles.circleContainer}}>
+        <div  className={"memo-circle"} style={{...styles.circleContainer}}>
             <div style={{boxShadow:  "24px 24px 48px #d4cfc9, -24px -24px 48px #ffffff", width: "auto", height: "auto"}}>
                 <div style={{ ...styles.circle, ...styles.blueCircle }}></div>
                 <div style={{ ...styles.circle, ...styles.mainCircle}}>

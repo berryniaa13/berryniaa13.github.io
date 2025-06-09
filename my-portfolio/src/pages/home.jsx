@@ -32,7 +32,7 @@ export default function HomePage() {
                 <NavBar />
             </header>
             <main>
-                <section style={styles.banner}>
+                <section className={"banner"} style={styles.banner}>
                     <MemoCircle/>
                     <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
                         <h1>Hello! I'm Nia </h1>
@@ -54,7 +54,7 @@ export default function HomePage() {
                 </section>
                 <section>
                     <h2>Work</h2>
-                    <div style={styles.projects}>
+                    <div className={"projects"} style={styles.projects}>
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />
                     </div>
