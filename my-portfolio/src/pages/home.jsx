@@ -78,6 +78,7 @@ const styles = {
         padding: "0px",
         gap: "10px",
         justifyContent: "center",
+        flexWrap: "wrap",
     },
     projects: {
         display: "flex",
