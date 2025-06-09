@@ -1,3 +1,10 @@
+$circle: 20%;
+$bot-offset: 10%;
+$main-offset: 5%;
+$top-offset: 25%;
+
+
+
 :root {
   --primary-blue: #3987d0;     // bold powdery blue
   --accent-green: #2f8c3c;     // accent
@@ -14,7 +21,7 @@
 }
 * {
   box-sizing: border-box;
- // outline: 1px solid red;
+  outline: 1px solid red;
 }
 html, body {
   overflow-x: hidden;
@@ -188,33 +195,43 @@ section {
 
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
+    padding: 10px;
     margin-top: 30px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .tag {
+    font-size: 0.9rem;
+    padding: 6px 18px;
   }
 
   .project-card {
     width: 100% ;
     margin-bottom: 1.5rem;
   }
-
-  .banner {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .projects {
     flex-direction: column;
     align-items: center;
   }
-  .tag {
-    font-size: 0.9rem;
-    padding: 6px 18px;
-  }
+
+
+  // Memo Circle
   .memo-circle {
     max-width: 90vw;
     transform: scale(0.75);
     margin: 0 auto;
+  }
+  .bottom-circle {
+    left: calc($circle - $bot-offset);
+  }
+  .main-circle {
+    left: calc($circle - $main-offset);
+  }
+  .top-circle {
+    left: calc($circle + $top-offset);
   }
 }
 

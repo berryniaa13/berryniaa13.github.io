@@ -7,8 +7,8 @@ export default function MemoCircle() {
     return (
         <div  className={"memo-circle"} style={{...styles.circleContainer}}>
             <div style={{boxShadow:  "24px 24px 48px #d4cfc9, -24px -24px 48px #ffffff", width: "auto", height: "auto"}}>
-                <div  style={{ ...styles.circle, ...styles.blueCircle }}></div>
-                <div  style={{ ...styles.circle, ...styles.mainCircle}}>
+                <div className={"top-circle"} style={{ ...styles.circle, ...styles.blueCircle }}></div>
+                <div className={"main-circle"} style={{ ...styles.circle, ...styles.mainCircle}}>
                     <div>
                         <img
                             src= {Memoji}
@@ -17,7 +17,7 @@ export default function MemoCircle() {
                         />
                     </div>
                 </div>
-                <div  style={{ ...styles.circle, ...styles.bottomCircle }}></div>
+                <div className={"bottom-circle"} style={{ ...styles.circle, ...styles.bottomCircle }}></div>
             </div>
         </div>
     );
@@ -29,6 +29,7 @@ const styles = {
         width: "500px",
         height: "500px",
         marginBottom: "10px",
+
     },
     circle: {
         position: "absolute",

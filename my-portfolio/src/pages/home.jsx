@@ -47,7 +47,7 @@ export default function HomePage() {
                             ))}
                         </ul>
                         <h3>
-                            a creative frontend developer passionate about building beautiful,
+                            a frontend developer passionate about building beautiful,
                             intuitive digital experiences
                         </h3>
                     </div>
