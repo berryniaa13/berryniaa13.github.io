@@ -57,7 +57,7 @@ footer {
 
 .container {
   margin-top: 100px;
-  margin-left: 60px;
+  padding-left: 60px;
 }
 .neumorphic {
   background: var(--background-white);
@@ -188,7 +188,7 @@ section {
 
 @media (max-width: 768px) {
   .container {
-    padding: 1rem;
+    padding: 20px;
     margin-left: 0;
   }
 
@@ -207,10 +207,9 @@ section {
     flex-direction: column;
     align-items: center;
   }
-
   .tag {
     font-size: 0.9rem;
-    padding: 6px 12px;
+    padding: 6px 18px;
   }
   .memo-circle {
     max-width: 90vw;

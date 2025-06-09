@@ -36,7 +36,7 @@ export default function HomePage() {
                     <MemoCircle/>
                     <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
                         <h1>Hello! I'm Nia </h1>
-                        <ul style={styles.role}>
+                        <ul className={"role"} style={styles.role}>
                             {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
                                 <li
                                     key={role}
