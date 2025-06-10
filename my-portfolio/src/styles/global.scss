@@ -1,9 +1,3 @@
-$circle: 20%;
-$bot-offset: 10%;
-$main-offset: 5%;
-$top-offset: 25%;
-
-
 
 :root {
   --primary-blue: #3987d0;     // bold powdery blue
@@ -21,7 +15,7 @@ $top-offset: 25%;
 }
 * {
   box-sizing: border-box;
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 html, body {
   overflow-x: hidden;
@@ -193,6 +187,7 @@ section {
   pointer-events: auto;
 }
 
+// Mobile Styling
 @media (max-width: 768px) {
   .container {
     padding: 10px;
@@ -224,15 +219,7 @@ section {
     transform: scale(0.75);
     margin: 0 auto;
   }
-  .bottom-circle {
-    left: calc($circle - $bot-offset);
-  }
-  .main-circle {
-    left: calc($circle - $main-offset);
-  }
-  .top-circle {
-    left: calc($circle + $top-offset);
-  }
+
 }
 
 

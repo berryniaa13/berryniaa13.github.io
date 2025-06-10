@@ -26,9 +26,10 @@ export default function MemoCircle() {
 const styles = {
     circleContainer: {
         position: "relative",
-        width: "500px",
+        width: "400px",
         height: "500px",
         marginBottom: "10px",
+        marginLeft: "120px",
 
     },
     circle: {
@@ -49,13 +50,13 @@ const styles = {
         width: "130px",
         height: "130px",
         top: 0,
-        left: "55%",
+        left: "40%",
     },
     mainCircle: {
         width: "350px",
         height: "350px",
         top: "80px",
-        left: "20%",
+        left: "5%",
         flexDirection: "column",
         // backgroundColor: "#eee",
         // backgroundColor: "#694716",
@@ -77,6 +78,6 @@ const styles = {
         width: "140px",
         height: "140px",
         bottom: 0,
-        left: "15%",
+        left: "0%",
     },
 };

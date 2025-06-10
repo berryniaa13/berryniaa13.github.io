@@ -35,7 +35,7 @@ export default function HomePage() {
                 <section className={"banner"} style={styles.banner}>
                     <MemoCircle/>
                     <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
-                        <h1>Hello! I'm Nia </h1>
+                        <h1>Hi! I'm Nia </h1>
                         <ul className={"role"} style={styles.role}>
                             {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
                                 <li

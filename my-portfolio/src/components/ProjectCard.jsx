@@ -25,7 +25,6 @@ export default function ProjectCard({project}) {
                         <li className={"tag"} style={{backgroundColor: project?.backgroundColor}} key={category}>
                             {category} </li>
                         ))}</ul>
-                    <a href={project?.url || "#"} style={{...styles.link, color: project?.backgroundColor}}>View Details</a>
                 </div>
             </div>
         </>
