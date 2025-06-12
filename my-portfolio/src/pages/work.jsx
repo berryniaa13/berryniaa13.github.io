@@ -33,29 +33,30 @@ export default function WorkPage() {
             <header>
                 <NavBar />
             </header>
-            <aside className="sidebar">
-                {filters.map((filter) => (
-                    <button
-                        key={filter}
-                        className={`filter-button ${activeFilter === filter ? "active" : ""}`}
-                        onClick={() => setActiveFilter(filter)}
-                    >
-                        {filter}
-                    </button>
-                ))}
-            </aside>
+            {/*<aside className="sidebar">*/}
+            {/*    {filters.map((filter) => (*/}
+            {/*        <button*/}
+            {/*            key={filter}*/}
+            {/*            className={`filter-button ${activeFilter === filter ? "active" : ""}`}*/}
+            {/*            onClick={() => setActiveFilter(filter)}*/}
+            {/*        >*/}
+            {/*            {filter}*/}
+            {/*        </button>*/}
+            {/*    ))}*/}
+            {/*</aside>*/}
             <main className="board">
-                <Masonry
-                    breakpointCols={breakpointColumnsObj}
-                    className="my-masonry-grid"
-                    columnClassName="my-masonry-grid_column"
-                >
-                    {cards.map((card, index) => (
-                        <div className="card" key={index}>
-                            <img src={card.image} alt="Card" />
-                        </div>
-                    ))}
-                </Masonry>
+                {/*<Masonry*/}
+                {/*    breakpointCols={breakpointColumnsObj}*/}
+                {/*    className="my-masonry-grid"*/}
+                {/*    columnClassName="my-masonry-grid_column"*/}
+                {/*>*/}
+                {/*    {cards.map((card, index) => (*/}
+                {/*        <div className="card" key={index}>*/}
+                {/*            <img src={card.image} alt="Card" />*/}
+                {/*        </div>*/}
+                {/*    ))}*/}
+                {/*</Masonry>*/}
+                <h1> 🚧 This website is currently under construction. Check back soon for updates! 🚧</h1>
             </main>
 
             </div>

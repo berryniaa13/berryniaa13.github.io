@@ -6,7 +6,7 @@
   --accent-yellow: #fff1a8;   // buttery yellow
   --accent-yellowTwo: #ffe770; // bolder buttery yellow
   --background-white: #f7f9fb; // Light white with cool tone
-  --background-nude: #f9f4ec;
+  --background-nude: #fbf8f4;
   --soft-gray: #e3e6ea;        // For shadows and surfaces
   --text-dark: #1a1a1a;        // Body text
   --text-light: #ffffff;       // For contrasting on blue/green buttons
@@ -45,7 +45,7 @@ h1 {
 }
 h2 {
   font-size: 1.8rem;
-  text-align: center;
+ // text-align: center;
 }
 h3 {
   font-size: 1.5rem;
@@ -219,6 +219,9 @@ section {
 
 // Mobile Styling
 @media (max-width: 768px) {
+  img {
+    width: 80%;
+  }
   .container {
     padding: 10px;
     margin-top: 30px;

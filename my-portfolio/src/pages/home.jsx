@@ -36,7 +36,7 @@ export default function HomePage() {
                     <MemoCircle/>
                     <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
                         <section className="construction-banner">
-                            🚧 This website is currently under construction. Check back soon for updates!
+                            🚧 This website is currently under construction. Check back soon for updates! 🚧
                         </section>
                         <h1>Hi! I'm Nia </h1>
                         <ul className={"role"} style={styles.role}>
