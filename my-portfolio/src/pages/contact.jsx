@@ -164,6 +164,7 @@ const styles = {
         borderRadius: '8px',
         padding: '8px',
         outline: 'none',
+        color: '#374151',
     },
     textarea: {
         width: '100%',
@@ -172,9 +173,10 @@ const styles = {
         padding: '8px',
         outline: 'none',
         resize: 'vertical',
+        color: '#374151',
     },
     image: {
-        width: '45%',
+        width: '40%',
         height: '420px',
         borderRadius: '18px',
         margin: '50px',

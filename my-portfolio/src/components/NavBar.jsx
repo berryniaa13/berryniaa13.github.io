@@ -22,7 +22,7 @@ export default function NavBar() {
                 </li>
                 <li>
                     <Link to="/contact" className={"nav-link"}>
-                        Contact Me
+                        Contact
                     </Link>
                 </li>
             </ul>

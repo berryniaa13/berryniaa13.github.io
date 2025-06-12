@@ -3,7 +3,7 @@ import Masonry from "react-masonry-css";
 import "../styles/work.scss"
 import NavBar from "../components/NavBar.jsx";
 
-const filters = ["UX Design", "Software Development"]
+const filters = ["UX Design", "Full-Stack Development"]
 
 const cards = [
     { id: 1, category: "Software Development", image: "/images/workout1.jpg" },

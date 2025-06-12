@@ -20,7 +20,7 @@ const projectTwo = {
     image: FAMUniteImage,
     date: "September 2024 - May 2025",
     description: "A two semester software development capstone project",
-    tags: ["Software Development", "UX Design"],
+    tags: ["Full-Stack Development", "UX Design"],
     url: "https://github.com/berryniaa13/famunite2",
     backgroundColor: "#573105"
 }
@@ -56,7 +56,7 @@ export default function HomePage() {
                     </div>
                 </section>
                 <section>
-                    <h2>Work</h2>
+                    <h2 style={{textAlign: "center"}}>Work</h2>
                     <div className={"projects"} style={styles.projects}>
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />
