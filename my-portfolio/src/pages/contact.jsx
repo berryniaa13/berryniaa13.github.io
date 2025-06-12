@@ -9,7 +9,10 @@ export default function ContactPage() {
                 <NavBar />
             </header>
             <main>
+                <section className={"banner"}>
+                    <div ></div>
 
+                </section>
             </main>
             <footer>
                 © {new Date().getFullYear()} Nia Berry. All rights reserved.

@@ -1,0 +1,96 @@
+.work {
+  .container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      box-shadow: none;
+      padding: 10px;
+    }
+  }
+
+  .filter-button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: #333;
+
+    &:hover {
+      background-color: #eaeaea;
+    }
+
+    &.active {
+      background-color: #3987d0;
+      color: white;
+    }
+  }
+
+  .board {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .my-masonry-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -16px;
+    width: auto;
+
+    @media (max-width: 768px) {
+      margin-left: -8px;
+    }
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 16px;
+    background-clip: padding-box;
+
+    @media (max-width: 768px) {
+      padding-left: 8px;
+    }
+  }
+
+  .card {
+    margin-bottom: 16px;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+  }
+}
