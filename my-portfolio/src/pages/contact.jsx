@@ -1,10 +1,35 @@
-import React from "react";
+import React, {useRef} from "react";
+import emailjs from "@emailjs/browser";
 import "../styles/global.scss"
 import NavBar from "../components/NavBar.jsx";
 import Headshot from "../assets/LibHeadshot.JPEG";
 import Resume from "../assets/Nia Berry CS Resume.pdf";
 
 export default function ContactPage() {
+    const formRef = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'service_gph8dwr',     // EmailJS Service ID
+                'template_ahz3ujj',    // EmailJS Template ID
+                formRef.current,
+                'KKIBR_NCfot7BVzef'         // EmailJS Public Key (User ID)
+            )
+            .then(
+                () => {
+                    alert("Message sent successfully!");
+                    e.target.reset(); // optional: clears the form
+                },
+                (error) => {
+                    alert("Failed to send message. Please try again later.");
+                    console.error(error);
+                }
+            );
+    };
+
     return (
         <div className="container">
             <header>
@@ -47,7 +72,7 @@ export default function ContactPage() {
                                     </a>
                                 </div>
                             </div>
-                            <form style={styles.form}>
+                            <form style={styles.form}  ref={formRef} onSubmit={sendEmail}>
                                 <div>
                                     <label htmlFor="name" style={styles.label}>Name</label>
                                     <input
