@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, {useState} from "react";
 import Masonry from "react-masonry-css";
 import "../styles/work.scss"
 import NavBar from "../components/NavBar.jsx";
@@ -56,7 +56,9 @@ export default function WorkPage() {
                 {/*        </div>*/}
                 {/*    ))}*/}
                 {/*</Masonry>*/}
-                <h1> 🚧 This website is currently under construction. Check back soon for updates! 🚧</h1>
+                <section className="construction-banner">
+                    🚧 This page is currently under construction. Check back soon for updates! 🚧
+                </section>
             </main>
 
             </div>

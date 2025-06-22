@@ -35,9 +35,6 @@ export default function HomePage() {
                 <section className={"banner"} >
                     <MemoCircle/>
                     <div style={{margin: "55px", textAlign: "center", maxWidth: "500px"}}>
-                        <section className="construction-banner">
-                            🚧 This website is currently under construction. Check back soon for updates! 🚧
-                        </section>
                         <h1>Hi! I'm Nia </h1>
                         <ul className={"role"} style={styles.role}>
                             {['Web Developer', 'UX Designer', 'Problem Solver'].map((role) => (
