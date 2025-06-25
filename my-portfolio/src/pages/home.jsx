@@ -7,6 +7,7 @@ import KINDImage from "../assets/KIND/AwardPictureGroup.JPG"
 import FAMUniteImage from "../assets/FAMUnite/FAMUniteScreenshot.png"
 import StyledByImage from "../assets/StyledBy/styledByCover.png"
 
+// home
 
 const projectOne = {
     title: "KIND Perfect Pitch",
