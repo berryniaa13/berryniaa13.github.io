@@ -2,6 +2,10 @@ import React, {useState} from "react";
 import Masonry from "react-masonry-css";
 import "../styles/work.scss"
 import NavBar from "../components/NavBar.jsx";
+import ProjectCard from "../components/ProjectCard.jsx";
+import KINDImage from "../assets/KIND/AwardPictureGroup.JPG";
+import FAMUniteImage from "../assets/FAMUnite/FAMUniteScreenshot.png";
+import StyledByImage from "../assets/StyledBy/styledByCover.png";
 
 const filters = ["UX Design", "Full-Stack Development"]
 
@@ -15,6 +19,37 @@ const cards = [
     { id: 7, category: "New house decor", image: "/images/decor1.jpg" },
     // ...more cards
 ];
+
+const projectOne = {
+    title: "KIND Perfect Pitch",
+    image: KINDImage,
+    date: "September - October 2023",
+    description: "A first place six week case competition solution for attracting Gen-Z consumers",
+    tags: ["UX Design"],
+    url: "https://github.com/berryniaa13/KINDPerfectPitch",
+    backgroundColor: "#855014"
+}
+const projectTwo = {
+    title: "FAMUnite",
+    image: FAMUniteImage,
+    date: "September 2024 - May 2025",
+    description: "A two semester software development capstone project",
+    tags: ["Full-Stack Development", "UX Design"],
+    url: "https://github.com/berryniaa13/famunite2",
+    backgroundColor: "#573105"
+}
+
+const projectThree = {
+    title: "StyledBy",
+    image: StyledByImage,
+    date: "January 2024 - May 2024",
+    description: "A semester group application development project",
+    tags: ["Full-Stack Development"],
+    url: "https://github.com/berryniaa13/StyledBy",
+    backgroundColor: "#a57134"
+
+}
+
 export default function WorkPage() {
     const [activeFilter, setActiveFilter] = useState("All");
 
@@ -59,6 +94,14 @@ export default function WorkPage() {
                 <section className="construction-banner">
                     🚧 This page is currently under construction. Check back soon for updates! 🚧
                 </section>
+                <section>
+                    <h2 style={{textAlign: "center"}}>Work</h2>
+                    <div className={"projects"} style={styles.projects}>
+                        <ProjectCard project={projectOne} />
+                        <ProjectCard project={projectTwo} />
+                        <ProjectCard project={projectThree} />
+                    </div>
+                </section>
             </main>
 
             </div>
@@ -68,4 +111,11 @@ export default function WorkPage() {
         </div>
     );
 
+}
+const styles = {
+    projects: {
+        display: "flex",
+        justifyContent: "center",
+        gap: "25px",
+    }
 }

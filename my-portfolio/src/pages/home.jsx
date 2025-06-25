@@ -5,6 +5,8 @@ import MemoCircle from "../components/MemoCircle.jsx";
 import ProjectCard from "../components/ProjectCard.jsx";
 import KINDImage from "../assets/KIND/AwardPictureGroup.JPG"
 import FAMUniteImage from "../assets/FAMUnite/FAMUniteScreenshot.png"
+import StyledByImage from "../assets/StyledBy/styledByCover.png"
+
 
 const projectOne = {
     title: "KIND Perfect Pitch",
@@ -23,6 +25,17 @@ const projectTwo = {
     tags: ["Full-Stack Development", "UX Design"],
     url: "https://github.com/berryniaa13/famunite2",
     backgroundColor: "#573105"
+}
+
+const projectThree = {
+    title: "StyledBy",
+    image: StyledByImage,
+    date: "January 2024 - May 2024",
+    description: "A semester group application development project",
+    tags: ["Full-Stack Development"],
+    url: "https://github.com/berryniaa13/StyledBy",
+    backgroundColor: "#a57134"
+
 }
 
 export default function HomePage() {
@@ -57,6 +70,7 @@ export default function HomePage() {
                     <div className={"projects"} style={styles.projects}>
                         <ProjectCard project={projectOne} />
                         <ProjectCard project={projectTwo} />
+                        <ProjectCard project={projectThree} />
                     </div>
                 </section>
             </main>
