@@ -33,7 +33,7 @@ const projectThree = {
     date: "January 2024 - May 2024",
     description: "A semester group application development project",
     tags: ["Full-Stack Development"],
-    url: "https://github.com/berryniaa13/StyledBy",
+    url: "https://github.com/cisjavaholics/styledby",
     backgroundColor: "#a57134"
 
 }
