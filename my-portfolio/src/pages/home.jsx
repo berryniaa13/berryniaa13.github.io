@@ -56,7 +56,7 @@ export default function HomePage() {
                                 <li
                                     key={role}
                                     className="tag"
-                                    style={{backgroundColor: "var(--accent-yellowTwo)", color: "var(--accent-brown)", fontWeight: "bold"}}
+                                    style={{backgroundColor: "var(--accent-yellowTwo)", color: "var(--accent-brown)", fontWeight: "bold", border: "1.5px solid var(--accent-brown)"}}
                                 >
                                     {role}
                                 </li>
