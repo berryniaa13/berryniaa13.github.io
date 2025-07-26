@@ -56,6 +56,7 @@ export default function HomePage() {
                                 <li
                                     key={role}
                                     className="tag"
+                                    style={{backgroundColor: "var(--accent-yellowTwo)", color: "var(--accent-brown)", fontWeight: "bold"}}
                                 >
                                     {role}
                                 </li>
@@ -68,7 +69,7 @@ export default function HomePage() {
                         <a
                             href={Resume}
                             download
-                            style={styles.role}
+                            style={styles.download}
                         >
                             Download My Resume
                         </a>
@@ -97,6 +98,16 @@ const styles = {
         gap: "10px",
         justifyContent: "center",
         flexWrap: "wrap",
+    },
+    download: {
+        display: 'inline-block',
+        textAlign: 'center',
+        fontWeight: '500',
+        padding: '12px 24px',
+        borderRadius: '9999px',
+        backgroundColor: 'var(--accent-brown)',
+        color: '#FFFFFF',
+        textDecoration: 'none',
     },
     projects: {
         display: "flex",
