@@ -6,6 +6,7 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import KINDImage from "../assets/KIND/AwardPictureGroup.JPG"
 import FAMUniteImage from "../assets/FAMUnite/FAMUniteScreenshot.png"
 import StyledByImage from "../assets/StyledBy/styledByCover.png"
+import Resume from "../assets/Nia Berry CS Resume.pdf";
 
 // home
 
@@ -64,6 +65,13 @@ export default function HomePage() {
                             a frontend developer passionate about building beautiful,
                             intuitive digital experiences
                         </h3>
+                        <a
+                            href={Resume}
+                            download
+                            style={styles.role}
+                        >
+                            Download My Resume
+                        </a>
                     </div>
                 </section>
                 <section>
